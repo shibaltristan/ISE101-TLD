@@ -1,5 +1,6 @@
 
 import { StyleSheet, Text, View } from 'react-native';
+<<<<<<< HEAD
 import { getUnreadAnnouncements } from '../services/announcementUtils';
 import type { Announcement } from '../types/announcement';
 
@@ -11,10 +12,15 @@ const sampleAnnouncements: Announcement[] = [
 export default function HomeScreen() {
   const unreadAnnouncements = getUnreadAnnouncements(sampleAnnouncements);
 
+=======
+
+export default function HomeScreen() {
+>>>>>>> 743e7a05f46a107c09d494086a60459bee66b434
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Campus Connect</Text>
       <Text>One campus. Connected students.</Text>
+<<<<<<< HEAD
       <Text style={styles.summary}>
         Unread announcements: {unreadAnnouncements.length}
       </Text>
@@ -23,6 +29,9 @@ export default function HomeScreen() {
           {item.title}
         </Text>
       ))}
+=======
+      <Text>Welcome to the Week 1 project foundation.</Text>
+>>>>>>> 743e7a05f46a107c09d494086a60459bee66b434
     </View>
   );
 }
@@ -40,6 +49,7 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     marginBottom: 12,
   },
+<<<<<<< HEAD
   summary: {
     marginTop: 24,
     fontWeight: '600',
@@ -47,4 +57,6 @@ const styles = StyleSheet.create({
   announcement: {
     marginTop: 12,
   },
+=======
+>>>>>>> 743e7a05f46a107c09d494086a60459bee66b434
 });
