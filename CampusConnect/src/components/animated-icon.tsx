@@ -9,12 +9,12 @@ const DURATION = 600;
 
 export function AnimatedSplashOverlay() {
   const [initialScaleFactor, setInitialScaleFactor] = useState(1);
+  const [animate, setAnimate] = useState(false);
+  const [visible, setVisible] = useState(true);
 
   useEffect(() => {
     setInitialScaleFactor(Dimensions.get('screen').height / 90);
   }, []);
-  const [animate, setAnimate] = useState(false);
-  const [visible, setVisible] = useState(true);
 
   if (!visible) return null;
 

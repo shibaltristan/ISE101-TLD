@@ -1,4 +1,3 @@
-
 import { useRouter } from 'expo-router';
 import { useEffect, useState } from 'react';
 import { Alert, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
@@ -19,6 +18,7 @@ export default function HomeScreen() {
   useEffect(() => {
     setCompact(width < 380);
   }, [width]);
+
   const unreadAnnouncements = getUnreadAnnouncements(announcementData);
 
   const handleActionPress = () => {
